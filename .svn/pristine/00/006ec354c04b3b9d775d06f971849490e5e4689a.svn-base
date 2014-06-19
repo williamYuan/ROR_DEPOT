@@ -1,0 +1,99 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hengyi Media Invoice System</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>'>
+	<div id='banner'>
+		<%= image_tag("logo.png") %>
+		<%= @page_title || 'Invoice Listing'%>
+	</div>
+	<div id='columns'>
+		<div id='side'>
+			<ul>
+				<li><a href="http://www.alphafinancia.ca">Alpha Financial Service</a></li>
+				<li><a href="htpp://www.hengyimedia.com">Hengyi Media Magazine</a></li>
+				<li><a href='http://www.vancouverabc.ca'>丹丘财务</a></li>
+				<li><a href='/products'>Products</a></li>
+				<li><a href='/store/index'>store</a></li>
+				
+			</ul>
+		</div>
+		<div id = 'main'>
+			<%= yield %>
+		</div>
+	</div>
+</body>
+</html>
+
+-->
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+		<title>衡意文化传播有限公司 | Heng Yi Media % Entertainment Inc.</title>
+		<style type='text/css'>	</style>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+		<link rel='stylesheet' type='text/css' href='http://hengyimedia.com/css/main1.css' />
+		<link rel='stylesheet' type='text/css' href='http://hengyimedia.com/css/scrollable-horizontal.css' />
+		<link rel='stylesheet' type='text/css' href='http://hengyimedia.com/css/scrollable-buttons.css' />
+		<link rel='stylesheet' type='text/css' href='http://hengyimedia.com/css/scrollable-navigator.css' />
+		<link rel='stylesheet' type='text/css' href='http://hengyimedia.com/css/overlay.css' />
+		<link rel='stylesheet' type='text/css' href='http://hengyimedia.com/css/lightbox.css' media='screen' />
+    	<link rel='stylesheet' type='text/css' href='css/csshake.css'>	
+		<link rel='stylesheet' type='text/css' href='css/component.css'/>
+			
+		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script> 
+		<script type='text/javascript' src='http://hengyimedia.com/scripts/lightbox.js'></script>
+		<script type='text/javascript' src='http://hengyimedia.com/scripts/library.js'></script>
+		<script type='text/javascript' src='http://hengyimedia.com/scripts/customize.js'></script>
+	</head>
+				
+	<body id='magazine' class='<%= controller.controller_name %>'>
+		<div id='wrapper'>
+	        <div id='header-wrapper'>
+	            <a id='logo' href='http://hengyimedia.com'>衡意文化传播有限公司</a>
+	            <div id='nav'>
+	                <ul>
+	                    <li><a href='http://hengyimedia.com'>首页</a></li>
+	                    <li><a href='http://hengyimedia.com/about-hengyi'>关于衡意</a></li>
+	                    <li><a href='http://liv.hengyimedia.com/' class='active' style='padding:0 25px;'><img src='http://hengyimedia.com/images/utilities/nav-living-in-vancouver.png' /></a></li>
+	                    <li><a href='http://hengyimedia.com/latest-news'>最新资讯</a></li>
+	                    <li><a href='http://hengyimedia.com/review'>精彩回顾</a></li>
+	                    <li><a href='http://hengyimedia.com/contact-us'>联系我们</a></li>
+	                </ul>
+	            </div> 
+				            
+	            <div id='social-bar'><img src='http://hengyimedia.com/images/utilities/title.jpg'/></div>
+			            
+	        </div>
+				        
+	       	<div id='content-wrapper'>			            
+				<div style='float:left; padding-left:30px;'><img src='http://hengyimedia.com/images/contents/invoice_mag_header.jpg' /></div>         
+				<div id='mag_nav'>
+					<ul>
+				       	<li style='font-size:12px'><a href='Accounting.php'> Accounting </a></li>
+				        <li style='font-size:12px'><a href='Publish.php'>Publish</a></li>
+				        <li style='font-size:12px'><a href='PeriodReport.php'>Reporting</a></li>
+				        <li style='font-size:12px'><a href='/store/index'>Store</a></li>
+				        <li style='font-size:12px'><a href='/products'>Products</a></li>
+				        <li style='font-size:12px'><a href='phpInfo.php'>Login/out</a></li>
+				    </ul>
+				</div> 
+				<div class='clear-div'></div>				
+				<div class='mag_cont' id='main'>
+					<%= yield %>
+				</div>					
+			</div>	
+    		<div id='footer'>
+				<div id='footer-left'>Copyright © 2013 衡意文化传播有限公司 版权所有</div>
+    		</div>
+		</div>
+	</body>
+</html>

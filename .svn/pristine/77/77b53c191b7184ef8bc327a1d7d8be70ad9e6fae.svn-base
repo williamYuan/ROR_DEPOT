@@ -1,0 +1,36 @@
+o: ActiveSupport::Cache::Entry:@valueI"¥				<div class='entry'>
+				<table><tr><td>
+				<div class="row">
+						<div class="col-sm-6">
+					    	<div class="ih-item circle colored effect19">
+						    	<a href="#">
+							        <div class="img">
+										<img alt="Alpha" src="/assets/alpha.png" />
+							        </div>
+							        <div class="info">
+							          <h3>Add to Cart</h3>
+							          <p>This one should be listed in your shopping cart!</p>
+							        </div>
+						      	</a>
+						    </div>
+						</div>
+					</div>
+					</td>
+					<td>
+					<h3>CoffeeScript
+					<p>CoffeeScript is JavaScript done right. It provides all of JavaScript's
+	functionality wrapped in a cleaner, more succinct syntax. In the first
+	book on this exciting new language, CoffeeScript guru Trevor Burnham
+	shows you how to hold onto all the power and flexibility of JavaScript
+	while writing clearer, cleaner, and safer code ...
+      </p></h3>
+					<meta content="authenticity_token" name="csrf-param" />
+<meta content="6temR/j1O42kHPqX5ImubInpIDOOQhbr0aum0Jbo0W4=" name="csrf-token" />
+					<div class="price_line">
+						<span class="price">$36.00</span>
+						<form action="/line_items?product_id=3" class="button_to" method="post"><div><input class="submit-button" type="submit" value=" Hold. " /><input name="authenticity_token" type="hidden" value="6temR/j1O42kHPqX5ImubInpIDOOQhbr0aum0Jbo0W4=" /></div></form>
+					</div>
+					</td>
+				</tr></table>
+				</div>
+:ET:@created_atf1400711223.154164:@expires_in0

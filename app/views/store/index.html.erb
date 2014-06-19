@@ -1,0 +1,42 @@
+<% if notice %>
+	<p id="notice">.<%= notice %>.</p>
+<% end %>
+<h1>Your Invoice Catalog</h1>
+<h2>Hold you need to cart</h2>
+<div class='entry'>
+	<% cache ['store', Product.latest] do %>
+		<% @products.each do |product| %>
+			<% cache ['entry', product] do %>
+				<div class='entry'>
+				<table><tr><td>
+				<div class="row">
+						<div class="col-sm-6">
+					    	<div class="ih-item circle colored effect19">
+						    	<a href="#">
+							        <div class="img">
+										<%= image_tag(product.image_url) %>
+							        </div>
+							        <div class="info">
+							          <h3>Add to Cart</h3>
+							          <p>This one should be listed in your shopping cart!</p>
+							        </div>
+						      	</a>
+						    </div>
+						</div>
+					</div>
+					</td>
+					<td>
+					<h3><%= product.title %>
+					<%= sanitize(product.description) %></h3>
+					<%= csrf_meta_tags %>
+					<div class="price_line">
+						<span class="price"><%= number_to_currency(product.price) %></span>
+						<%= button_to ' Hold. ', line_items_path(product_id: product), {:class => "submit-button"} %>
+					</div>
+					</td>
+				</tr></table>
+				</div>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>

@@ -1,0 +1,33 @@
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class='form-450'>
+    <div class="field">
+      <h3><%= f.label :title %>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.text_field :title, "class" => "font-field", "align"=>"left" %></h3>
+    </div>
+    <div class="field">
+      <h3><%= f.label :description %>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.text_area :description, "class" => "font-field", rows: 20, cols: 30 %></h3>
+    </div>
+    <div class="field">
+      <h3><%= f.label :image_url %>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= f.text_field :image_url, "class" => "font-field" %></h3>
+    </div>
+    <div class="field">
+      <h3><%= f.label :price %>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= f.text_field :price, "class" => "font-field" %></h3>
+    </div>
+    <div class="actions">
+      <%= f.submit " Update ", :class => "submit-button" %>  &nbsp;
+      <%= link_to ' Show ', @product, :class=>'submit-button' %>  &nbsp;  &nbsp;
+      <%= link_to ' Back ', products_path, :class=>'submit-button' %>
+    </div>
+  </div>
+<% end %>

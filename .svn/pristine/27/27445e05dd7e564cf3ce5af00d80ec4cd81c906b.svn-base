@@ -1,0 +1,32 @@
+o: ActiveSupport::Cache::Entry:@valueI"º				<div class='entry'>
+				<table><tr><td>
+				<div class="row">
+						<div class="col-sm-6">
+					    	<div class="ih-item circle colored effect19">
+						    	<a href="#">
+							        <div class="img">
+										<img alt="360sec" src="/assets/360Sec.png" />
+							        </div>
+							        <div class="info">
+							          <h3>Add to Cart</h3>
+							          <p>This one should be listed in your shopping cart!</p>
+							        </div>
+						      	</a>
+						    </div>
+						</div>
+					</div>
+					</td>
+					<td>
+					<h3>360Security
+					<p>360 security company is a virtual company for test. All the information about this corporation will be fake. 
+</p></h3>
+					<meta content="authenticity_token" name="csrf-param" />
+<meta content="6temR/j1O42kHPqX5ImubInpIDOOQhbr0aum0Jbo0W4=" name="csrf-token" />
+					<div class="price_line">
+						<span class="price">$700.00</span>
+						<form action="/line_items?product_id=8" class="button_to" method="post"><div><input class="submit-button" type="submit" value=" Hold. " /><input name="authenticity_token" type="hidden" value="6temR/j1O42kHPqX5ImubInpIDOOQhbr0aum0Jbo0W4=" /></div></form>
+					</div>
+					</td>
+				</tr></table>
+				</div>
+:ET:@created_atf1400711223.14731:@expires_in0
